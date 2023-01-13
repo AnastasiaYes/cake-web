@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contacts_inform_wrapper {
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contacts_inform {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.c_inf {
+    margin-left: 20px;
+}
+
+.c_inf_main {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contacts_inform_text {
+    max-width: 50%;
+    margin-right: 5px;
+}

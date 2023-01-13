@@ -1,0 +1,23 @@
+.container_delivery h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container_delivery h3 {
+    margin: 50px;
+    text-align: center;
+}
+
+.container_delivery a {
+    font-weight: bolder;
+    color: rgba(168, 141, 122);
+}
+
+.container_delivery i {
+    color: rgba(168, 141, 122);
+}
+
+.container_delivery ul, ol {
+    line-height: 35px;
+}
+

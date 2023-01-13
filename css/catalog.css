@@ -1,0 +1,100 @@
+.cakes_catalog h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.catalog_wrap {
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0.03rem 0.06rem rgb(0 0 0 / 10%), 0 0.1rem 0.3rem rgb(0 0 0 / 10%);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;;
+}
+
+.catalog_img {
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+}
+
+.catalog_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.catalog_inform {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.catalog_inform .catalog_inform_name {
+    flex: 1;
+    margin: 15px 0;
+}
+
+.catalog_but {
+    border: 1px solid rgba(168, 141, 122);
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: block;
+    margin: 10px auto;
+    font-size: 24px;
+}
+
+.catalog_wrap:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.catalog_but:hover {
+    background: rgba(168, 141, 122, 0.5);
+}
+
+.catalog_but:active {
+    background: rgba(168, 141, 122);
+}
+
+.catalog_inform h3 a:hover {
+    color: rgba(168, 141, 122);
+}
+
+.catalog_inform h3 a:active {
+    color: #401D06;
+}
+
+.popular::before {
+    content: '';
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-image: url("/img/hot.png");
+    background-repeat: no-repeat;
+    top: -18px;
+    left: -26px;
+    z-index: 2;
+}
+
+.sale::before {
+    content: 'Акция!';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #F44336;
+    font-size: 25px;
+    background: white;
+    padding: 0 10px;
+    border-radius: 5px 0 0 0;
+    font-weight: 600;
+    z-index: 2;
+}

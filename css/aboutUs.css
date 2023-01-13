@@ -1,0 +1,19 @@
+.about_me_h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.wrapper_information_about_me {
+    display: flex;
+}
+
+.wrapper_information_about_me img {
+    border-radius: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.information_about_me {
+    margin-right: 60px;
+}

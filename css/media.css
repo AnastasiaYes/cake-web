@@ -1,0 +1,387 @@
+@media screen and (max-width: 1250px) {
+    .container {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cooperation_desserts {
+        width: 45%;
+        margin: 50px auto 0 auto;
+    }
+
+    .cooperation_desserts img {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .basement > div {
+        width: 50%;
+        text-align: center;
+    }
+
+    .basement span {
+        justify-content: center;
+    }
+
+    .dessert_container {
+        display: block;
+    }
+
+    .dessert_img img {
+        width: 100%;
+        display: block;
+    }
+
+    .dessert_text {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .basket_price {
+        display: block;
+    }
+
+    .basket_price > span {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .basket_price_button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .information_about_me {
+        margin: 0;
+    }
+
+    .wrapper_information_about_me {
+        display: block;
+    }
+
+    .wrapper_information_about_me img {
+        margin: auto;
+    }
+
+    .about_me_photo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contacts_inform_text {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .contacts_inform_wrapper {
+        display: block;
+    }
+
+    .titles_product {
+        display: none;
+    }
+
+    .product_inform_img img {
+        margin: 0 20px 0 5px
+    }
+
+    .product_container {
+        width: 100%;
+    }
+
+    .remove_product_container {
+        width: 0;
+    }
+
+    .general_purchase_information {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid #401d06;
+    }
+
+    .product_inform i {
+        position: absolute;
+        right: 1px;
+    }
+
+    td, th {
+        border-bottom: none;
+    }
+
+    thead, tbody {
+        display: block;
+        border-bottom: 1px solid #401d06;
+    }
+
+    .dessert_additional_basket_amount {
+        margin: 0 20px 0 5px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container_phone {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    .catalog.active_submenu .dropdown_directory {
+        height: 200px;
+    }
+
+    .container_nav_bottom {
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        background-color: rgba(255, 255, 255);
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        box-shadow: 0 3px 5px -1px rgb(0 0 0 / 10%);
+    }
+
+    .container_nav_bottom {
+        top: -400px;
+        left: 0;
+        z-index: 5;
+    }
+
+    .container_nav_bottom.active {
+        top: 47px;
+    }
+
+    .wrapper_nav_bottom .stock:active, .contacts:active {
+        background-color: rgba(168, 141, 122, 0.80);
+        transition: all 0.3s ease 0s;
+    }
+
+    .catalog:active .dropdown_directory {
+        display: block;
+    }
+
+    .wrapper_nav_bottom > div > a:hover {
+        color: #401D06;
+    }
+
+    .wrapper_nav_bottom {
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    .wrapper_nav_bottom > div {
+        padding: 15px 20px;
+    }
+
+    .catalog i {
+        right: 20px;
+        font-size: 16px;
+    }
+
+    .dropdown_directory {
+        position: relative;
+    }
+
+    .catalog {
+        position: relative;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .header_burger {
+
+        position: relative;
+        width: 22px;
+        height: 19px;
+        margin-right: 10px;
+    }
+
+    .header_burger:before {
+        content: '';
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #401d06;
+    }
+
+    .header_burger:after {
+        content: '';
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #401d06;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger span {
+        background-color: #401d06;
+        width: 100%;
+        height: 2px;
+        position: relative;
+        display: block;
+        top: 50%;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 8px;
+        width: 25px;
+    }
+
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 8px;
+        width: 25px;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .catalog_wrap {
+        width: 300px;
+    }
+
+    .catalog_img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .catalog_inform {
+        flex: 0px;
+    }
+
+    .cooperation_desserts {
+        width: 95%;
+    }
+
+    .catalog_inform .catalog_inform_name {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .basement > div {
+        width: 100%;
+    }
+
+    .dessert_text h1 {
+        font-size: 35px;
+    }
+
+    .basket_product_inform,
+    .basket_price {
+        width: 100%;
+    }
+
+    .basket_price_button {
+        padding: 10px 10px;
+        font-size: 24px;
+    }
+
+    .product_inform p {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .additional_parameters {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .header_burger {
+        width: 19px;
+        height: 15px;
+    }
+
+    .shop_basket i {
+        font-size: 18px;
+    }
+
+    .cake_weight_sel_wrapper {
+        width: 100%;
+    }
+
+    .dessert_additional_basket_amount i {
+        padding: 10px;
+    }
+
+    .basket_price {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_burger.active:before {
+        top: 6px;
+        width: 17px;
+    }
+
+    .header_burger.active:after {
+        bottom: 8px;
+        width: 17px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .basket_price {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .container {
+        margin: 0 5px;
+    }
+
+    .catalog.active_submenu .dropdown_directory {
+        height: 230px;
+    }
+
+    .dessert_additional_basket_wrapper {
+        flex-direction: column;
+    }
+
+    .dessert_additional_basket {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .dessert_additional_basket_wrapper {
+        margin-top: 30px;
+    }
+
+    .catalog_but {
+        padding: 10px 10px;
+    }
+
+    .product_inform_img img {
+        width: 80px;
+    }
+}
+

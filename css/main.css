@@ -1,0 +1,316 @@
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('/css/font-famile/Cormorant-LightItalic.eot');
+    src: local('☺'), url('/css/font-famile/Cormorant-LightItalic.woff') format('woff'), url('/css/font-famile/Cormorant-LightItalic.ttf') format('truetype'), url('/css/font-famile/Cormorant-LightItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: url('/css/font-famile/Cormorant-MediumItalic.eot');
+    src: local('☺'), url('/css/font-famile/Cormorant-MediumItalic.woff') format('woff'), url('/css/font-famile/Cormorant-MediumItalic.ttf') format('truetype'), url('/css/font-famile/Cormorant-MediumItalic.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: url('/css/font-famile/Cormorant-SemiBoldItalic.eot');
+    src: local('☺'), url('/css/font-famile/Cormorant-SemiBoldItalic.woff') format('woff'), url('/css/font-famile/Cormorant-SemiBoldItalic.ttf') format('truetype'), url('/css/font-famile/Cormorant-SemiBoldItalic.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: url('/css/font-famile/Cormorant-BoldItalic.eot');
+    src: local('☺'), url('/css/font-famile/Cormorant-BoldItalic.woff') format('woff'), url('/css/font-famile/Cormorant-BoldItalic.ttf') format('truetype'), url('/css/font-famile/Cormorant-BoldItalic.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    overflow-anchor: none;
+}
+
+body, button, input, i {
+    font-family: 'Cormorant', serif;
+    font-size: 28px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body p, a, h1, h2, span, img, i {
+    color: #401D06;
+}
+
+
+header {
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 10%), 0 2px 1px -1px rgb(0 0 0 / 5%);
+    margin-bottom: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #fff;
+
+}
+
+nav {
+    position: relative;
+}
+
+.number_of_selected_items {
+    width: 17px;
+    height: 17px;
+    background-color:  rgba(168, 141, 122, 0.80);
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: emoji;
+}
+
+.d-none{
+    display: none!important;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.container_nav_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.naw_right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.catalog i {
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+
+.header_burger {
+    width: 0;
+}
+
+.container_search_field input {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.container_search_field input::placeholder {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.container_phone .phone {
+    font-size: 20px;
+    margin-right: 25px;
+    font-family: emoji;
+}
+
+button.nav_link.button_contacts {
+    width: 100%;
+    text-align: start;
+}
+
+.wrapper_nav_bottom > div {
+    padding: 15px 0;
+    display: block;
+}
+
+.wrapper_nav_bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.catalog {
+    position: relative;
+}
+
+.wrapper_nav_bottom > div > a:hover,
+.wrapper_nav_bottom > div > a:hover i {
+    color: rgba(168, 141, 122);
+    transition: all 0.5s;
+}
+
+.shop_basket i:hover {
+    color: rgba(168, 141, 122);
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+}
+
+.dropdown_directory {
+    background: rgba(168, 141, 122, 0.60);
+    margin-top: 10px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 10%), 0 2px 1px -1px rgb(0 0 0 / 5%);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.catalog.active_submenu .dropdown_directory {
+    height: 230px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.catalog.active_submenu i {
+    transform: rotate(180deg);
+    transition: all 0.3s ease 0s;
+}
+
+.dropdown_directory a:hover {
+    transition: all 0.5s;
+    background-color: rgba(168, 141, 122, 0.8);
+}
+
+.dropdown_directory_menu {
+    line-height: 30px;
+}
+
+.dropdown_directory_menu a {
+    display: block;
+    padding: 5px 30px;
+}
+
+
+.container_main {
+    text-align: center;
+}
+
+.assortment {
+    margin: 50px 0;
+}
+
+.description_assortment {
+    width: 80%;
+    margin: 0 auto 50px auto;
+
+}
+
+.collage_img {
+    width: 100%;
+}
+
+.collage {
+    position: relative;
+}
+
+.collage_but {
+    border: 2px solid #ffe3cf;
+    border-radius: 20px;
+    padding: 10px 50px;
+    box-shadow: 0 2px 9px 2px #401d06;
+    text-align: center;
+    background: rgba(168, 141, 122, 0.90);
+}
+
+.container_collage_but {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_collage_but button:hover {
+    transform: scale(1.1, 1.1);
+    background: rgba(168, 141, 122, 0.95);
+}
+
+.container_collage_but button:active {
+    transform: none;
+    background: rgba(168, 141, 122);
+}
+
+
+.basement {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.basement span {
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+}
+
+.basement i {
+    width: 40px;
+}
+
+footer {
+    background: rgba(168, 141, 122);
+    padding-bottom: 50px;
+    font-size: 24px;
+    margin-top: 100px;
+}
+footer i {
+    font-size: 24px;
+}
+
+.basement a:hover, .basement a:hover span, .basement a:hover i {
+    color: #ffe3cf;
+}
+
+#more_goods {
+    display: block;
+    margin: 20px auto 0;
+}
+
+.basket_price_button {
+    border: 1px solid rgba(168, 141, 122);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.basket_price_button:hover {
+    background: rgba(168, 141, 122, 0.5);
+}
+
+.basket_price_button:active {
+    background: rgba(168, 141, 122);
+}
+
+.cakes_catalog .might_like {
+    margin: 80px auto 50px;
+}
