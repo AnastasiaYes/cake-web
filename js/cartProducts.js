@@ -5,11 +5,12 @@ export function countingTheNumberOfItemsInTheCart() { // подсчет кол-�
         return
     }
 
-    number.innerText = getCartProducts().length;
+    const productsQuantity = getCartProducts().length;
+    number.innerText = productsQuantity;
 
-    if (number.innerText > 0 && number.classList.contains('d-none')) {
+    if (productsQuantity > 0 && number.classList.contains('d-none')) {
         number.classList.remove('d-none');
-    } else if (number.innerText === 0 && !number.classList.contains('d-none')) {
+    } else if (productsQuantity === 0 && !number.classList.contains('d-none')) {
         number.classList.add('d-none');
     }
 }
